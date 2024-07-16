@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Merger</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Image Merger</h1>
+    <div id="dropZone">Drop images here or click to select</div>
+    <input type="file" id="fileInput" multiple accept=".png, .jpg, .jpeg" style="display:none;">
+    <div class="flx">
+        <button id="mergeHorizontallyBtn">Merge Horizontally</button>
+        <button id="mergeVerticallyBtn">Merge Vertically</button>
+    </div>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="result">
+        <div id="horizontalResult">
+            <h2>Horizontally Merged Image</h2>
+            <a id="downloadHorizontalBtn" style="display:none;">Download Horizontally Merged Image</a>
+            <br><br>
+            <div class="image-container hor"></div>
+        </div>
+        <div id="verticalResult">
+            <h2>Vertically Merged Image</h2>
+            <a id="downloadVerticalBtn" style="display:none;">Download Vertically Merged Image</a>
+            <br><br>
+            <div class="image-container ver"></div>
+        </div>
+    </div>
+    <p class="credits">Copyright &copy; 2024 Giridharan S</p>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

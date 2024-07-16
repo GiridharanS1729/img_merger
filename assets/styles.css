@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+}
+
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 2s ease;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="file"]:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #df2c8b, #d86c00);
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff32da, #ffd428);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#dropZone {
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#dropZone:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.flx {
+    display: flex;
+    flex-direction: row;
+}
+
+#result {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+#horizontalResult,
+#verticalResult {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+#horizontalResult:hover,
+#verticalResult:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    -webkit-text-stroke: #ffd00085 0.5px;
+    color: #3f1300;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #fe9861, #ff0084, #ff5151);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background: linear-gradient(-45deg, #efbc14, #fa58ab, #ff5319);
+    transform: translateY(1px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.credits {
+    font-size: 20px;
+    color: #FFA500;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    backdrop-filter: blur(80px);
+    font-family: arial;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-text-stroke: #000080b1 0.3px;
+    background-color: #fff1;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5PX;
+
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
