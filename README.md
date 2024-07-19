@@ -63,3 +63,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries or feedback, please contact Giridharan S. via email at giridharans1729@gmail.com.
+
+---
